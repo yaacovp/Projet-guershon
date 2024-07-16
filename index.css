@@ -1,7 +1,7 @@
 .service, .testimonial, .photos, .videos, .contact {
     background: white;
     padding: 20px;
-    margin: 20px 20px; /* Add margin for spacing */
+    margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     animation: fadeUp 1s ease-in-out;
@@ -42,15 +42,14 @@
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Add space between images */
+    gap: 10px;
 }
 
 .photo-gallery img {
     width: 100%;
-    max-width: calc(33.333% - 10px); /* Adjust to have 3 images per row with gaps */
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
-    object-fit: cover;
 }
 
 .video-gallery {
@@ -62,7 +61,7 @@
 .video-gallery video {
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 300px;
     border-radius: 8px;
 }
 
@@ -94,11 +93,11 @@ section {
 @media (max-width: 768px) {
     .service, .testimonial, .photos, .videos, .contact {
         padding: 15px;
-        margin: 15px 10px; /* Adjust margin for smaller screens */
+        margin: 15px 0;
     }
 
     .photo-gallery img {
-        max-width: calc(50% - 10px); /* Adjust to have 2 images per row with gaps */
+        max-width: 100%;
     }
 
     .video-gallery video {
@@ -110,16 +109,11 @@ section {
 @media (max-width: 480px) {
     .service, .testimonial, .photos, .videos, .contact {
         padding: 10px;
-        margin: 10px 5px; /* Adjust margin for smaller screens */
+        margin: 10px 0;
     }
 
     .photo-gallery {
         flex-direction: column;
-    }
-
-    .photo-gallery img {
-        max-width: 100%;
-        margin-bottom: 10px; /* Add space between images for smaller screens */
     }
 
     .video-gallery {

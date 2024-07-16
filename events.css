@@ -1,7 +1,6 @@
 .events ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 20px; /* Add margin for spacing */
 }
 
 .events li {
@@ -12,10 +11,9 @@
 }
 
 .events img {
-    max-width: 100%;
+    max-width: 100px;
     display: block;
     margin-top: 10px;
-    height: auto;
 }
 
 #lightbox {
@@ -46,12 +44,11 @@
 
 .social-share {
     margin-top: 10px;
-    display: flex;
-    gap: 10px; /* Add gap between buttons */
 }
 
 .social-share a {
     display: inline-block;
+    margin-right: 10px;
     padding: 5px 10px;
     color: white;
     background-color: #007BFF;
@@ -95,11 +92,6 @@
     .delete-event {
         padding: 3px 8px;
     }
-
-    .events img {
-        max-width: 100%;
-        height: auto;
-    }
 }
 
 @media (max-width: 480px) {
@@ -125,7 +117,6 @@
     }
 
     .events img {
-        max-width: 100%;
-        height: auto;
+        max-width: 80px;
     }
 }
