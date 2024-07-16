@@ -3,18 +3,22 @@
     flex-direction: column;
     gap: 10px;
 }
+
 .add-event form div {
     display: flex;
     flex-direction: column;
 }
+
 .add-event form label {
     margin-bottom: 5px;
 }
+
 .add-event form input, .add-event form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 .add-event form button {
     padding: 10px;
     color: white;
@@ -23,6 +27,36 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
 .add-event form button:hover {
     background: #0056b3;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .add-event form {
+        gap: 8px;
+    }
+
+    .add-event form input, .add-event form textarea {
+        padding: 8px;
+    }
+
+    .add-event form button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-event form {
+        gap: 5px;
+    }
+
+    .add-event form input, .add-event form textarea {
+        padding: 5px;
+    }
+
+    .add-event form button {
+        padding: 5px;
+    }
 }

@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p>${event.description}</p>
                 ${event.photo ? `<a href="${event.photo}" class="lightbox"><img src="${event.photo}" alt="${event.title}"></a>` : ''}
                 <div class="social-share">
-                    <a href="#" class="facebook-share" target="_blank">Partager sur Facebook</a>
+                    <!-- <a href="#" class="facebook-share" target="_blank">Partager sur Facebook</a>
                     <a href="#" class="twitter-share" target="_blank">Partager sur Twitter</a>
-                    <a href="#" class="instagram-share">Partager sur Instagram</a>
+                    <a href="#" class="instagram-share">Partager sur Instagram</a> -->
                 </div>
                 ${isAuthenticated ? `<button class="delete-event" data-index="${index}">Supprimer l'événement</button>` : ''}
             `;
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Partage sur les réseaux sociaux
-    const facebookShares = document.querySelectorAll('.facebook-share');
+    /*const facebookShares = document.querySelectorAll('.facebook-share');
     const twitterShares = document.querySelectorAll('.twitter-share');
     const instagramShares = document.querySelectorAll('.instagram-share');
     const currentUrl = window.location.href;
@@ -92,8 +92,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert("Aucune photo disponible pour partager sur Instagram.");
             }
         });
-    });
+    });*/
 
+    
     const logoutButton = document.getElementById('logout-button');
 
     if (logoutButton) {

@@ -3,18 +3,22 @@
     flex-direction: column;
     gap: 10px;
 }
+
 .login form div {
     display: flex;
     flex-direction: column;
 }
+
 .login form label {
     margin-bottom: 5px;
 }
+
 .login form input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 .login form button {
     padding: 10px;
     color: white;
@@ -23,6 +27,36 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
 .login form button:hover {
     background: #0056b3;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .login form {
+        gap: 8px;
+    }
+
+    .login form input {
+        padding: 8px;
+    }
+
+    .login form button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login form {
+        gap: 5px;
+    }
+
+    .login form input {
+        padding: 5px;
+    }
+
+    .login form button {
+        padding: 5px;
+    }
 }
