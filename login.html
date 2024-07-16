@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <header>
+        <h1>Connexion</h1>
+    </header>
+    <div class="container">
+        <section id="login" class="login">
+            <h2>Veuillez vous connecter pour ajouter un événement</h2>
+            <form id="login-form">
+                <div>
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Connexion</button>
+            </form>
+            <p id="login-error" style="color: red; display: none;">Mot de passe incorrect. Veuillez réessayer.</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 [Nom du Chanteur]. Tous droits réservés.
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>

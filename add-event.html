@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Événement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="add-event.css">
+</head>
+<body>
+    <header>
+        <h1>Ajouter un Événement</h1>
+        <nav>
+            <a href="index.html">Retour à la page principale</a>
+            <a href="events.html">Voir les événements</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="add-event" class="add-event">
+            <h2>Ajouter un nouvel événement</h2>
+            <form id="add-event-form">
+                <div>
+                    <label for="event-title">Titre:</label>
+                    <input type="text" id="event-title" name="title" required>
+                </div>
+                <div>
+                    <label for="event-date">Date:</label>
+                    <input type="date" id="event-date" name="date" required>
+                </div>
+                <div>
+                    <label for="event-description">Description:</label>
+                    <textarea id="event-description" name="description" required></textarea>
+                </div>
+                <div>
+                    <label for="event-photo">Photo:</label>
+                    <input type="file" id="event-photo" name="photo" accept="image/*">
+                </div>
+                <button type="submit" class="btn">Ajouter</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 [Nom du Chanteur]. Tous droits réservés.
+    </footer>
+    <script src="auth.js"></script> <!-- Vérification de l'authentification -->
+    <script src="add-event.js"></script>
+</body>
+</html>

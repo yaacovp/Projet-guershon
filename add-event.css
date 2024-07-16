@@ -1,0 +1,28 @@
+.add-event form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-event form div {
+    display: flex;
+    flex-direction: column;
+}
+.add-event form label {
+    margin-bottom: 5px;
+}
+.add-event form input, .add-event form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.add-event form button {
+    padding: 10px;
+    color: white;
+    background: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-event form button:hover {
+    background: #0056b3;
+}

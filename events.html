@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier des Événements</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <h1>Calendrier des Événements</h1>
+        <p>Découvrez où je vais me produire prochainement.</p>
+        <nav>
+            <a href="index.html">Retour à la page principale</a>
+            <a href="add-event.html">Ajouter un événement</a>
+            <a href="#" id="logout-button">Déconnexion</a> <!-- Bouton de déconnexion -->
+        </nav>
+              
+    </header>
+    <div class="container">
+        <section id="events" class="events">
+            <h2>Événements à venir</h2>
+            <ul id="events-list">
+                <!-- Les événements seront chargés ici depuis le stockage local -->
+            </ul>
+            <p id="no-events-message" style="display: none;">Aucun événement à venir</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 [Nom du Chanteur]. Tous droits réservés.
+    </footer>
+    <script src="events.js"></script>
+</body>
+</html>
