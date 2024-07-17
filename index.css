@@ -184,6 +184,28 @@ section {
     border-radius: 8px;
 }
 
+/* Social media icons */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust gap between icons */
+}
+
+.social-icons img {
+    width: 60px; /* Increase the size of the icons */
+    height: 60px; /* Increase the size of the icons */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
 /* Media queries */
 @media (max-width: 1200px) {
     .container {
