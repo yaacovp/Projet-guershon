@@ -156,6 +156,34 @@ section {
     position: relative;
 }
 
+/* Lightbox Styles */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#lightbox img {
+    max-width: 90%; /* Reduce max-width for lightbox images */
+    max-height: 90%; /* Reduce max-height for lightbox images */
+    border-radius: 8px;
+}
+
 /* Media queries */
 @media (max-width: 1200px) {
     .container {
