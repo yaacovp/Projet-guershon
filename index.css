@@ -40,6 +40,8 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
+
 @keyframes slideIn {
     from {
         transform: translateX(-100%);
