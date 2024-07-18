@@ -26,13 +26,30 @@ document.addEventListener("DOMContentLoaded", function() {
                 const targetId = link.getAttribute('href').substring(1);
                 const targetSection = document.getElementById(targetId);
     
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                scrollToElement(targetSection, 2500); // 1000ms = 1s pour la durée du défilement
             });
         });
+    
+        function scrollToElement(element, duration) {
+            const startingY = window.pageYOffset;
+            const elementY = window.pageYOffset + element.getBoundingClientRect().top;
+            const diff = elementY - startingY;
+            let start;
+    
+            window.requestAnimationFrame(function step(timestamp) {
+                if (!start) start = timestamp;
+                const time = timestamp - start;
+                const percent = Math.min(time / duration, 1);
+    
+                window.scrollTo(0, startingY + diff * percent);
+    
+                if (time < duration) {
+                    window.requestAnimationFrame(step);
+                }
+            });
+        }
     });
+    
     
     document.getElementById('copyMessageButton').addEventListener('click', function() {
         const message = document.getElementById('preconfiguredMessage').innerText;
